@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignupViewController.swift
 //  VTalk
 //
 //  Created by HYOUNGSUN park on 1/4/18.
@@ -9,13 +9,16 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
-
-    @IBOutlet weak var loginButton: UIButton!
+class SignupViewController: UIViewController {
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signup: UIButton!
+    @IBOutlet weak var cancel: UIButton!
     
     let remoteConfig = RemoteConfig.remoteConfig()
-    var color: String!
+    var color: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +31,10 @@ class LoginViewController: UIViewController {
         }
         
         color = remoteConfig["splash_background"].stringValue
-        
-        statusBar.backgroundColor = UIColor(hex: color)
-        loginButton.backgroundColor = UIColor(hex: color)
-        signup.backgroundColor = UIColor(hex: color)
-        
-        signup.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
+        statusBar.backgroundColor = UIColor(hex: color!)
+        signup.backgroundColor = UIColor(hex: color!)
+        cancel.backgroundColor = UIColor(hex: color!)
         // Do any additional setup after loading the view.
-    }
-    
-    @objc func presentSignup() {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
-        self.present(view, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

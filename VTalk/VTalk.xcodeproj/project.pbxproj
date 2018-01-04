@@ -16,6 +16,7 @@
 		0AFAED441FFE06880036689B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFAED431FFE06880036689B /* GoogleService-Info.plist */; };
 		0AFAED461FFE12840036689B /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFAED451FFE12840036689B /* RemoteConfigDefaults.plist */; };
 		0AFAED481FFE16720036689B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAED471FFE16720036689B /* LoginViewController.swift */; };
+		0AFAED4A1FFEAA470036689B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAED491FFEAA470036689B /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0AFAED431FFE06880036689B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AFAED451FFE12840036689B /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		0AFAED471FFE16720036689B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0AFAED491FFEAA470036689B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		85D6FE2567487EDBD104EE02 /* Pods_VTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3B16EB0EF9F6B51B082116 /* Pods-VTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-VTalk/Pods-VTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				0AFAED3D1FFE05380036689B /* Info.plist */,
 				0AFAED451FFE12840036689B /* RemoteConfigDefaults.plist */,
 				0AFAED471FFE16720036689B /* LoginViewController.swift */,
+				0AFAED491FFEAA470036689B /* SignupViewController.swift */,
 			);
 			path = VTalk;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				0AFAED481FFE16720036689B /* LoginViewController.swift in Sources */,
 				0AFAED341FFE05380036689B /* ViewController.swift in Sources */,
+				0AFAED4A1FFEAA470036689B /* SignupViewController.swift in Sources */,
 				0AFAED321FFE05380036689B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

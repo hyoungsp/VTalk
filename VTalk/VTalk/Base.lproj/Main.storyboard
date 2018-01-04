@@ -116,12 +116,122 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="H97-Ki-YuB" id="An4-jb-0rJ"/>
-                        <outlet property="signIn" destination="Cb3-3B-FCm" id="ijF-Xb-CwS"/>
+                        <outlet property="signup" destination="Cb3-3B-FCm" id="Xa3-vk-wUN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOy-5e-Epw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="720.79999999999995" y="126.38680659670166"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="5JB-fh-6Jv">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="xs7-aO-FV9" customClass="SignupViewController" customModule="VTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4je-rY-QAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHP-jD-Moh" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="261" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bys-0I-KIh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cxh-op-N1c" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="324" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="REd-xL-CbJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-hS-8be" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="384" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Z5-Nu-TaL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-UR-Vmq">
+                                <rect key="frame" x="16" y="446" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tcd-qK-LHy"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-BE-iHs">
+                                <rect key="frame" x="16" y="494" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VUT-4c-Yfh"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k3L-Ec-Bag" firstAttribute="trailing" secondItem="eHs-UR-Vmq" secondAttribute="trailing" constant="16" id="471-qw-BbR"/>
+                            <constraint firstItem="PVe-hS-8be" firstAttribute="top" secondItem="Cxh-op-N1c" secondAttribute="bottom" constant="20" id="6lx-4x-dri"/>
+                            <constraint firstItem="Cxh-op-N1c" firstAttribute="leading" secondItem="k3L-Ec-Bag" secondAttribute="leading" constant="16" id="8Kh-gd-qS5"/>
+                            <constraint firstItem="dHP-jD-Moh" firstAttribute="top" secondItem="k3L-Ec-Bag" secondAttribute="top" constant="241" id="8QL-np-F2L"/>
+                            <constraint firstItem="k3L-Ec-Bag" firstAttribute="trailing" secondItem="PVe-hS-8be" secondAttribute="trailing" constant="16" id="9Ja-Kx-q3H"/>
+                            <constraint firstItem="4WK-BE-iHs" firstAttribute="leading" secondItem="k3L-Ec-Bag" secondAttribute="leading" constant="16" id="JkX-o9-kaX"/>
+                            <constraint firstItem="k3L-Ec-Bag" firstAttribute="trailing" secondItem="Cxh-op-N1c" secondAttribute="trailing" constant="16" id="Jsr-RI-uxN"/>
+                            <constraint firstItem="dHP-jD-Moh" firstAttribute="leading" secondItem="k3L-Ec-Bag" secondAttribute="leading" constant="16" id="NeD-kT-Vln"/>
+                            <constraint firstItem="eHs-UR-Vmq" firstAttribute="top" secondItem="PVe-hS-8be" secondAttribute="bottom" constant="22" id="Qsn-CN-ige"/>
+                            <constraint firstItem="eHs-UR-Vmq" firstAttribute="leading" secondItem="k3L-Ec-Bag" secondAttribute="leading" constant="16" id="RKd-ay-q5K"/>
+                            <constraint firstItem="4WK-BE-iHs" firstAttribute="top" secondItem="eHs-UR-Vmq" secondAttribute="bottom" constant="8" id="fGE-Ga-nZc"/>
+                            <constraint firstItem="k3L-Ec-Bag" firstAttribute="trailing" secondItem="dHP-jD-Moh" secondAttribute="trailing" constant="16" id="gFr-r0-Na8"/>
+                            <constraint firstItem="PVe-hS-8be" firstAttribute="leading" secondItem="k3L-Ec-Bag" secondAttribute="leading" constant="16" id="gq5-Jd-gVo"/>
+                            <constraint firstItem="Cxh-op-N1c" firstAttribute="top" secondItem="dHP-jD-Moh" secondAttribute="bottom" constant="23" id="iog-TX-62p"/>
+                            <constraint firstItem="k3L-Ec-Bag" firstAttribute="trailing" secondItem="4WK-BE-iHs" secondAttribute="trailing" constant="16" id="mLI-Zd-aY4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k3L-Ec-Bag"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancel" destination="4WK-BE-iHs" id="LAW-qE-clz"/>
+                        <outlet property="email" destination="dHP-jD-Moh" id="Axx-Z1-tnY"/>
+                        <outlet property="name" destination="Cxh-op-N1c" id="On7-EC-MlC"/>
+                        <outlet property="password" destination="PVe-hS-8be" id="Hmn-6J-3Wp"/>
+                        <outlet property="signup" destination="eHs-UR-Vmq" id="Rhk-gt-2iO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q29-9d-4Qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439.2" y="100.29985007496252"/>
         </scene>
     </scenes>
     <resources>
