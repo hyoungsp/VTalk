@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B89D4177886192B5E566BC40B3AE38C"
+               BlueprintIdentifier = "D74D8B3760C2038E20D4D4D573B7C314"
                BuildableName = "Pods_VTalk.framework"
                BlueprintName = "Pods-VTalk"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B89D4177886192B5E566BC40B3AE38C"
+            BlueprintIdentifier = "D74D8B3760C2038E20D4D4D573B7C314"
             BuildableName = "Pods_VTalk.framework"
             BlueprintName = "Pods-VTalk"
             ReferencedContainer = "container:Pods.xcodeproj">
