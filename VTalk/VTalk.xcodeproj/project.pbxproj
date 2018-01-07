@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04B44B17513428BF4C6CBE59 /* Pods_VTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6FE2567487EDBD104EE02 /* Pods_VTalk.framework */; };
+		0A07199C2001CABE00BF221E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07199B2001CABE00BF221E /* MainViewController.swift */; };
 		0AFAED321FFE05380036689B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAED311FFE05380036689B /* AppDelegate.swift */; };
 		0AFAED341FFE05380036689B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAED331FFE05380036689B /* ViewController.swift */; };
 		0AFAED371FFE05380036689B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFAED351FFE05380036689B /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		01502F4EEBF11859B7F28F83 /* Pods-VTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VTalk/Pods-VTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		0A07199B2001CABE00BF221E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0AFAED2E1FFE05380036689B /* VTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFAED311FFE05380036689B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFAED331FFE05380036689B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				0AFAED451FFE12840036689B /* RemoteConfigDefaults.plist */,
 				0AFAED471FFE16720036689B /* LoginViewController.swift */,
 				0AFAED491FFEAA470036689B /* SignupViewController.swift */,
+				0A07199B2001CABE00BF221E /* MainViewController.swift */,
 			);
 			path = VTalk;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				0AFAED341FFE05380036689B /* ViewController.swift in Sources */,
 				0AFAED4A1FFEAA470036689B /* SignupViewController.swift in Sources */,
 				0AFAED321FFE05380036689B /* AppDelegate.swift in Sources */,
+				0A07199C2001CABE00BF221E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

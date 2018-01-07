@@ -11,6 +11,10 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signup: UIButton!
     
@@ -19,6 +23,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        try! Auth.auth().signOut()
         
         let statusBar = UIView()
         self.view.addSubview(statusBar)
@@ -33,8 +39,29 @@ class LoginViewController: UIViewController {
         loginButton.backgroundColor = UIColor(hex: color)
         signup.backgroundColor = UIColor(hex: color)
         
+        loginButton.addTarget(self, action: #selector(loginEvent), for: .touchUpInside)
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if (user != nil) {
+                let view = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                self.present(view, animated: true, completion: nil)
+            }
+        }
+        
         signup.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func loginEvent() {
+        
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, err) in
+            
+            if (err != nil) {
+                let alert = UIAlertController(title: "Error", message: err.debugDescription, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Confirmed", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @objc func presentSignup() {

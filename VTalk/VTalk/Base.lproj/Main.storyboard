@@ -64,7 +64,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,13 +115,15 @@
                         <viewLayoutGuide key="safeArea" id="zLN-ls-bbg"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="Dbd-Xg-Xqd" id="SOs-zB-eBQ"/>
                         <outlet property="loginButton" destination="H97-Ki-YuB" id="An4-jb-0rJ"/>
+                        <outlet property="password" destination="ODp-6x-sid" id="Wrw-Nd-CVh"/>
                         <outlet property="signup" destination="Cb3-3B-FCm" id="Xa3-vk-wUN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOy-5e-Epw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720.79999999999995" y="126.38680659670166"/>
+            <point key="canvasLocation" x="655" y="126"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="5JB-fh-6Jv">
@@ -172,7 +174,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -241,7 +243,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q29-9d-4Qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439.2" y="100.29985007496252"/>
+            <point key="canvasLocation" x="1306" y="125"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="wuK-qL-bft">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="gjb-uE-CaB" customClass="MainViewController" customModule="VTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hW-iU-nPP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Uxv-dq-bxP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooD-QH-rwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="125"/>
         </scene>
     </scenes>
     <resources>
